@@ -33,6 +33,19 @@ $Credential | Export-CliXml -Path "${env:\userprofile}\sqltop.cred"
 
 This will create a secure credential object that can be re-used in the future.
 
+## Installation
+SQLTop is not yet in the Powershell Gallery, but will be soon. For now, you can simply clone this repo into your PowerShell module path. To clone this to your default module path you can simply run this from a PowerShell prompt:
+
+Using SSH:
+```
+git clone git@github.com:channeladvisor/sqltop.git "$($env:PSModulePath.Split(':')[0])/sqltop"
+```
+
+Using HTTPS:
+```
+git clone https://github.com/channeladvisor/sqltop.git "$($env:PSModulePath.Split(':')[0])/sqltop"
+```
+
 ## Overview
 There are a lot of different screens and options in SQLTop. Here I will go over the general approach taken to navigation and UI so you can explore the tool on your own.
 
