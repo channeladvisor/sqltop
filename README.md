@@ -38,12 +38,12 @@ SQLTop is not yet in the Powershell Gallery, but will be soon. For now, you can 
 
 Using SSH:
 ```
-git clone git@github.com:channeladvisor/sqltop.git "$($env:PSModulePath.Split(':')[0])/sqltop"
+git clone git@github.com:channeladvisor/sqltop.git "$($env:PSModulePath.Split(';')[0])/sqltop"
 ```
 
 Using HTTPS:
 ```
-git clone https://github.com/channeladvisor/sqltop.git "$($env:PSModulePath.Split(':')[0])/sqltop"
+git clone https://github.com/channeladvisor/sqltop.git "$($env:PSModulePath.Split(';')[0])/sqltop"
 ```
 
 ## Overview
