@@ -17,10 +17,10 @@ This tool is heavily influenced by the power and ease of use of tools like `top`
 ## Usage
 SQLTop is easy to use:
 ```
-Invoke-SQLTop -SqlInstance <my_db_host> [-Credentials <credential object>] [-SqlAuth]
+Invoke-SQLTop -SqlInstance <my_db_host> [-Credential <credential object>] [-SqlAuth]
 ```
 * `SqlInstance` - the SQL Instance to connect to
-* `Credentials` - a credential object to use for SQL auth
+* `Credential` - a credential object to use for SQL auth
 * `SqlAuth` - when this parameter is used sqltop will try to pull credentials from a local file `sqltop.cred` in your user home directory.
 
 ### Creating a `.cred` File
